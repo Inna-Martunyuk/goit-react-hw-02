@@ -1,11 +1,12 @@
+import css from "./Feedback.module.css"
 const Feedback = ({ good, neutral, bad, totalFeedback, positiveFeedback }) => {
   return (
     <>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>Total: {totalFeedback}</p>
-      <p>Positive: {positiveFeedback}</p>
+      <p className={css.title}>Good: {good}</p>
+      <p className={css.title}>Neutral: {neutral}</p>
+      <p className={css.title}>Bad: {bad}</p>
+      <p className={css.title}>Total: {totalFeedback}</p>
+      <p className={css.title}>Positive: {positiveFeedback}</p>
     </>
   );
 };
